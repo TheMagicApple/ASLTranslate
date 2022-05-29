@@ -30,7 +30,7 @@ if ("webkitSpeechRecognition" in window) {
           interim_transcript += event.results[i][0].transcript;
         }
       }
-      //document.querySelector("#final").innerHTML = final_transcript;
+      document.querySelector("#final").innerHTML = final_transcript;
       //document.querySelector("#interim").innerHTML = interim_transcript;
     };
   
