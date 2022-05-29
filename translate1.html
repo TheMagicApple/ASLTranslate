@@ -2,31 +2,29 @@
 <html>
     <head>
         <title>Translate Speech to Sign</title>
-        <link rel="stylesheet" href="style.scss">
+        <link rel="stylesheet" href="stylereal.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head>
     <body>
 
-        <div id="Header">
-        <div class="texts"></div>
-        </div>
-        <div class="mt-4" id="div_language">
-            <h2 class="mb-3 text-light">Select Language</h2>
-            <select class="form-select bg-secondary text-light" id="select_language" onchange="updateCountry()"></select>
-            <select class="form-select bg-secondary text-light mt-2" id="select_dialect"></select>
-          </div>
-          <h2 class="mt-4 text-light">Transcript</h2>
-          <div class="p-3" style="border: 1px solid gray; height: 300px; border-radius: 8px;">
-            <span id="final" class="text-light"></span>
-            <span id="interim" class="text-secondary"></span>
-          </div>
+        
+      <a id="Back2" href="translateoptions.html">Back</a>
+          <button id="start">Start</button>
+          <button id="stop">Stop</button>
+          <h1 id="status">Listening...</h1>
+          <a href=""
+          <!--
           <div class="mt-4">
             <button class="btn btn-success" id="start">Start</button>
             <button class="btn btn-danger" id="stop">Stop</button>
-            <p id="status" class="lead mt-3 text-light" style="display: none">Listenting ...</p>
+            <p id="status" class="lead mt-3 text-light" style="display: none">Listening ...</p>
           </div>
+        -->
       
        
 
     </body>
-    <script src="../speechRecognition.js"></script>
+    <script src="speechRecognition.js"></script>
 </html>
